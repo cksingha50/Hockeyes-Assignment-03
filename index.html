@@ -3,14 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockeys Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hockeys Assignment</title>
+
+    <script>
+        tailwind.config ={
+          theme: {
+            extend:{
+              colors: {
+                clifford: '#da373d',
+                'btn-hockeye': '#FF4240',
+                'site-black': '#131318',
+                'site-gray': '#13131899',
+              },
+            }
+           
+        }
+    }
+      </script>
+      <style>
+        *{
+            font-family: 'Manrope', sans-serif;
+        }
+      </style>
 </head>
-<body>
-
-
+<body class="bg-white flex justify-center m-auto w-auto p-5 lg:p-0">
     <header>
+         <!-- Navbar Section -->
+        <nav class="mt-8">
+            
+            <div class="navbar bg-white text-black text-base max-w-[1170px] pb-3 lg:pb-12 ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm text-white dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class=" text-4xl font-extrabold text-site-black">Hockey's</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal text-[#424247] px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                   <a class="p-4 text-[#89898B] text-base" href=""><i class="fas fa-search"></i></a>
+                    
+                  <a class="btn text-white border-none bg-btn-hockeye">Get Ticket</a>
+                </div>
+              </div>
+
+
+        </nav>
+
+        <!-- Banner Section -->
+        <section>
+            <div>          
+                <div class="carousel relative  mx-w-[335px] h-[200px] lg:max-w-[1170px] lg:h-[550px] lg:w-full">
+                   
+                    <div id="slide1" class="carousel-item relative w-full">   
+                      <img src="Images/banner.png" class="w-full bg-center" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle lg:mt-96 ml-3">❮</a> 
+                        <a href="#slide2" class="btn btn-circle lg:mt-96 ml-3 lg:mr-auto">❯</a>
+                      </div>  
+                    </div> 
+
+                    <div id="slide2" class="carousel-item relative w-full">   
+                        <img src="Images/banner.png" class="w-full bg-center" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                          <a href="#slide1" class="btn btn-circle lg:mt-96 ml-3">❮</a> 
+                          <a href="#slide1" class="btn btn-circle lg:mt-96 ml-3 lg:mr-auto">❯</a>
+                        </div>  
+                      </div> 
+                  </div>
+                  <div class="absolute bg-site-black mt-4 p-5 lg:p-8 w-[93%] lg:w-[40%] rounded-2xl z-10 lg:ml-[600px] lg:mt-[-200px]">
+                    <h1 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                    <p class="text-[#FFFFFF99] text-base font-medium max-w-[400px] lg:max-w-[500px] pt-4 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Club Section -->
+
+        <section class="mt-52 lg:mt-32">
+
+            <div class="border-dashed border-y p-8 border-[#13131833] ">
+
+                <h1 class="text-center text-4xl font-extrabold text-site-black">Professional Hockeys Club</h1>
+                <p class="text-site-gray font-medium text-center m-auto lg:max-w-xl justify-items-center mt-6 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-12">
+                <div class="">
+                    <div class=" mb-6 mt-4 lg:mt-0 ml-56 lg:ml-24 text-xl font-extrabold max-w-32 radial-progress text-btn-hockeye" style="--value:87;" role="progressbar">87%</div>
+                    <h4 class="text-site-black mb-4 text-center text-xl font-semibold">Prayer Facility</h4>
+                    <p class="text-site-gray max-w-64 text-center m-auto text-base">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                <div class="">
+                    <div class=" mb-6 mt-4 lg:mt-0 ml-56 lg:ml-24 text-xl font-extrabold max-w-32 radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    <h4 class="text-site-black mb-4 text-center text-xl font-semibold">Experienced Coach</h4>
+                    <p class="text-site-gray max-w-64 text-center m-auto text-base">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                <div class="">
+                    <div class=" mb-6 mt-4 lg:mt-0 ml-56 lg:ml-24 text-xl font-extrabold max-w-32 radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    <h4 class="text-site-black mb-4 text-center text-xl font-semibold">Senior Player</h4>
+                    <p class="text-site-gray max-w-64 text-center m-auto text-base">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+                 <div class="">
+                    <div class=" mb-6 mt-4 lg:mt-0 ml-56 lg:ml-24 text-xl font-extrabold max-w-32 radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    <h4 class="text-site-black mb-4 text-center text-xl font-semibold">Training Ground</h4>
+                    <p class="text-site-gray max-w-64 text-center m-auto text-base">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+
+              
+            </div>
+
+            
+
+
+        </section>
+
+
+        <!-- program section -->
+
+        <section class="mt-10 lg:mt-32">
+            <div class="border-dashed border-y p-8 border-[#13131833] ">
+
+                <h1 class="text-center text-4xl font-extrabold text-site-black">Program Sections</h1>
+                <p class="text-site-gray font-medium text-center m-auto lg:max-w-xl justify-items-center mt-6 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.  </p>
+            </div>
+
+
+          <div class="mt-12">
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 ">
+
+                <div class="max-w-[570px] max-h-[330px] rounded-2xl bg-cover bg-center h-screen" style="background-image: url('Images/p1.png');">
+                    <div class="mt-20 ml-8">
+                        <h4 class="text-3xl text-white">Junior Program</h4>
+                       <p class="text-base text-white mt-4 mb-8 max-w-[470px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. 
+                        Tortor congue sed et in.</p>
+
+                        <button class="btn bg-btn-hockeye text-white border-none">Register Now!</button>
+                    </div>
+                </div>
+
+
+                <div class="max-w-[570px] max-h-[330px] rounded-2xl bg-cover bg-center h-screen" style="background-image: url('Images/p2.png');">
+                    <div class="mt-20 ml-8">
+                        <h4 class="text-3xl text-white">Teenage Program</h4>
+                       <p class="text-base text-white mt-4 mb-8 max-w-[470px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. 
+                        Tortor congue sed et in.</p>
+
+                        <button class="btn bg-btn-hockeye text-white border-none">Register Now!</button>
+                    </div>
+                </div>
+
+              
+
+             
+            </div>
+
+            <div class="grid grid-cols-1">
+
+                <div class="w-full mt-6 max-h-[330px] lg:max-h-[450px] rounded-2xl bg-cover bg-center h-screen" style="background-image: url('Images/p3.png');">
+                    <div class="mt-20 lg:mt-40 ml-8">
+                        <h4 class="text-3xl text-white">Junior Program</h4>
+                       <p class="text-base text-white mt-4 mb-8 max-w-[470px]">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. 
+                        Tortor congue sed et in.</p>
+
+                        <button class="btn bg-btn-hockeye text-white border-none">Register Now!</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+          </div>
+
+
+        </section>
 
     </header>
 
@@ -19,7 +215,7 @@
     </main>
 
     <footer>
-        
+
     </footer>
 
 
